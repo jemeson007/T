@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Iamount:</strong>
+  <%= @tx.iAmount %>
+</p>
+
+<p>
+  <strong>Icurrency:</strong>
+  <%= @tx.iCurrency %>
+</p>
+
+<p>
+  <strong>Oamount:</strong>
+  <%= @tx.oAmount %>
+</p>
+
+<p>
+  <strong>Ocurrency:</strong>
+  <%= @tx.oCurrency %>
+</p>
+
+<%= link_to 'Edit', edit_tx_path(@tx) %> |
+<%= link_to 'Back', txes_path %>

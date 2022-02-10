@@ -1,0 +1,37 @@
+<%= form_with(model: tx) do |form| %>
+  <% if tx.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(tx.errors.count, "error") %> prohibited this tx from being saved:</h2>
+
+      <ul>
+        <% tx.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :iAmount %>
+    <%= form.text_field :iAmount %>
+  </div>
+
+  <div class="field">
+    <%= form.label :iCurrency %>
+    <%= form.text_field :iCurrency %>
+  </div>
+
+  <div class="field">
+    <%= form.label :oAmount %>
+    <%= form.text_field :oAmount %>
+  </div>
+
+  <div class="field">
+    <%= form.label :oCurrency %>
+    <%= form.text_field :oCurrency %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
