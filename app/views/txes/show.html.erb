@@ -1,24 +1,24 @@
 <p id="notice"><%= notice %></p>
-
 <p>
-  <strong>Iamount:</strong>
+  <strong>Input currency:</strong>
+  <%= @tx.iCurrency %>
+</p>
+<p>
+  <strong>Input amount:</strong>
   <%= @tx.iAmount %>
 </p>
 
-<p>
-  <strong>Icurrency:</strong>
-  <%= @tx.iCurrency %>
-</p>
 
 <p>
-  <strong>Oamount:</strong>
+  <strong>Outputcurrency:</strong>
+  <%= @tx.oCurrency %>
+</p>
+<p>
+  <strong>Output amount:</strong>
   <%= @tx.oAmount %>
 </p>
 
-<p>
-  <strong>Ocurrency:</strong>
-  <%= @tx.oCurrency %>
-</p>
+
 
 <%= link_to 'Edit', edit_tx_path(@tx) %> |
 <%= link_to 'Back', txes_path %>
