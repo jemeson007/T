@@ -64,8 +64,8 @@ class TxesController < ApplicationController
       @tx = Tx.find(params[:id])
     end
 
-    # Only allow a list of trusted parameters through.
+    # Only allow a list of trusted parameters through. :oAmount,
     def tx_params
-      params.require(:tx).permit(:iAmount, :iCurrency, :customer_id, :oAmount, :oCurrency)
+      params.require(:tx).permit(:iAmount, :iCurrency, :St ,  :customer_id, :oCurrency)
     end
 end

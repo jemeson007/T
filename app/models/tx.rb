@@ -1,4 +1,5 @@
 class Tx < ApplicationRecord
-    # belongs_to :customer
-    validates :iAmount, :iCurrency, :customer_id, :oAmount, :oCurrency, presence: true 
+    # :oAmount,
+    validates :iAmount, :iCurrency, :customer_id, :St,  :oCurrency, presence: true 
+    
 end
